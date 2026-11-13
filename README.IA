@@ -1,0 +1,43 @@
+Registro de uso de Inteligencia Artificial
+
+1. Herramienta utilizada;
+
+Durante el desarrollo del proyecto Simulador de Misiones Artemis — Inyección Translunar (TLI) se utilizó ChatGPT, desarrollado por OpenAI, como herramienta de consulta y asistencia técnica.
+
+2. Ámbitos de utilización
+
+La inteligencia artificial se utilizó exclusivamente como apoyo en las siguientes áreas:
+
+- Cálculos matemáticos y planteamiento de problemas físicos
+
+Se utilizó como herramienta de consulta para analizar los conceptos físicos involucrados en el escenario planteado, orientar el planteamiento de los problemas y revisar los procedimientos matemáticos relacionados con:
+
+Energía cinética inicial.
+
+Energía cinética por unidad de masa.
+
+Igualdad de intensidades gravitatorias entre la Tierra y la Luna.
+
+Variación de energía potencial gravitatoria.
+
+Trabajo adicional por unidad de masa.
+
+- Asesoramiento sobre validaciones
+
+Se consultó para evaluar posibles mejoras en los mecanismos de control de errores y validación de entradas del programa, considerando el tratamiento de datos incorrectos y el comportamiento de la interfaz de consola.
+
+Las propuestas recibidas fueron consideradas como alternativas de mejora sujetas a revisión por parte del equipo.
+
+- Análisis y planteamiento técnico del trabajo
+
+Se utilizó como apoyo para analizar los requerimientos del escenario, organizar los aspectos técnicos que debían documentarse y orientar la elaboración del README del proyecto.
+
+3. Alcance y responsabilidad
+
+La inteligencia artificial fue utilizada como herramienta complementaria de consulta, sin reemplazar el análisis ni la responsabilidad técnica del equipo.
+
+Corresponde a los integrantes revisar los planteamientos, comprobar los resultados matemáticos y físicos, evaluar las propuestas de mejora y verificar que las decisiones adoptadas sean coherentes con los requerimientos del trabajo y los contenidos de la asignatura.
+
+4. Declaración de transparencia
+
+Se declara que ChatGPT fue utilizado como herramienta de asistencia exclusivamente para el análisis matemático y físico del escenario, el asesoramiento sobre posibles mejoras en las validaciones y el análisis y planteamiento técnico de la documentación del proyecto.
