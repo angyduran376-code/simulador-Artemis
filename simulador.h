@@ -11,6 +11,7 @@
 /* Constantes terrestres indicadas en el Problema 2 */
 #define G 6.674e-11
 #define MASA_TIERRA 5.972e24
+#define MASA_LUNA 7.346e22
 #define RADIO_TIERRA 6371000.0
 
 /* Estructuras de datos */
@@ -24,6 +25,9 @@ typedef struct {
 typedef struct {
     double energia_cinetica;
     double energia_por_unidad_masa;
+    double distancia_equilibrio;
+    double trabajo_potencial_por_unidad_masa;
+    double trabajo_adicional_por_unidad_masa;
 } Resultados;
 
 /* Prototipos de funciones */
