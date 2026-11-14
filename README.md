@@ -1,6 +1,6 @@
  Simulador de Misión Artemis - Trabajo Final AED
 
-Estructura del Proyecto (Orden de lectura)
+Estructura del Proyecto 
 README.md - Documentación general, reglas e instrucciones del proyecto.
 README.IA- Registro completo de interacciones y asistencia con IA.
 main.c- Punto de entrada del programa y menú interactivo.
@@ -8,10 +8,6 @@ simulador.c- Lógica central de la simulación y cálculo de variables.
 validaciones.c- Funciones de control y validación de entradas del usuario.
 simulador.h Archivo de cabecera con estructuras y prototipos del simulador.
 validaciones.h - Archivo de cabecera con prototipos de validaciones.
-
----
-
- Integrantes y Comisión
 Comisión: K1.4
 Integrantes:
 Duran angélica lorena-legajo:14895
