@@ -1,0 +1,64 @@
+# Registro de Pruebas — Simulador Artemis
+
+## 1. Objetivo
+
+El presente documento registra las pruebas realizadas sobre el Simulador de Misiones Artemis — Inyección Translunar (TLI), con el propósito de comprobar el funcionamiento de sus opciones, la coherencia de los resultados matemáticos y físicos y el comportamiento de los mecanismos de validación de entradas.
+
+## 2. Entorno de pruebas
+
+| Elemento | Descripción |
+| Lenguaje | C |
+| Compilador | GCC |
+| Entorno de desarrollo | Code::Blocks |
+| Sistema operativo | Windows |
+| Interfaz | Consola |
+
+## 3. Pruebas funcionales
+
+| ID | Entrada o acción | Resultado esperado | Resultado obtenido | Estado |
+|---|---|---|---|---|
+| N1 | Seleccionar opción 1 | Mostrar los parámetros iniciales de la misión. | Se mostraron correctamente los valores configurados. | Comprobado |
+| N2 | Seleccionar opción 2 | Calcular y mostrar la energía cinética total y específica. | Se obtuvieron 1.544.530.000.000 J y 59.405.000 J/kg. | Comprobado |
+| N3 | Seleccionar opción 3 | Mostrar la explicación de la Primera Ley de Newton. | Se mostró correctamente la explicación correspondiente. | Comprobado |
+| N4 | Seleccionar opción 4 | Mostrar el reporte final de resultados energéticos. | Se mostraron los resultados calculados por el programa. | Comprobado |
+| N5 | Seleccionar opción 0 | Finalizar la ejecución. | Se mostró el mensaje de finalización y el proceso terminó correctamente. | Comprobado |
+
+## 4. Pruebas de validación de entradas
+
+| ID | Entrada | Resultado esperado | Resultado obtenido | Estado |
+|---|---|---|---|---|
+| N6 | `hola` | Rechazar texto y solicitar nuevamente una opción. | Se mostró el mensaje de entrada inválida y se volvió a solicitar una opción. | Comprobado |
+| N7 | `8` | Informar que la opción no existe y volver al menú. | Se mostró el mensaje de opción incorrecta. | Comrprobado |
+| N8 | `-5` | Rechazar la opción inexistente y volver al menú. | Se mostró el mensaje de opción incorrecta. | Comprobado |
+| N9 | Presionar Enter sin escribir nada | Rechazar la entrada vacía y volver a solicitar una opción. | El programa interpretó la entrada como opción 0 y finalizó. | Fallida |
+| N10 | `2.5` | Rechazar el número decimal. | Pendiente de ejecución. | Comprobado |
+| N11 | `2abc` | Rechazar la entrada alfanumérica completa. | Pendiente de ejecución. | Comprobado |
+| N13 | `9999999999999999999999999` | Rechazar el número fuera del rango representable. | Pendiente de ejecución. | Comprobado |
+| N15 | Ingresar varias opciones válidas consecutivamente | Ejecutar cada opción sin cerrar inesperadamente el programa. | Pendiente de ejecución. | Comprobado|
+
+## 5. Verificación matemática
+
+Se comparan los resultados obtenidos por el programa con los cálculos matemáticos realizados para el escenario.
+
+| ID | Magnitud | Resultado esperado | Resultado obtenido | Estado |
+|---|---|---:|---:|---|
+| N16 | Energía cinética total | 1.544.530.000.000 J | 1.544.530.000.000 J | Comprobado |
+| N17 | Energía cinética específica | 59.405.000 J/kg | 59.405.000 J/kg | Comprobado |
+| N18 | Distancia del punto de referencia desde el centro terrestre | 345.662.973,58 m | 345.662.973,58 m | Comprobado |
+| N19 | Variación de energía potencial específica | 59.462.085,69 J/kg | 59.462.085,69 J/kg | Comprobado |
+| N20 | Trabajo adicional específico | 57.085,69 J/kg | 57.085,69 J/kg | Comprobado |
+| N21 | Trabajo adicional total | 1.484.227.847,21 J | 1.484.227.847,21 J | Comprobado |
+
+**Nota:** los resultados N18 a N21 corresponden al modelo simplificado implementado, basado en la igualdad de intensidades gravitatorias entre la Tierra y la Luna. No representan un cálculo orbital completo del punto L1.
+
+## 6. Registro de observaciones
+
+| ID | Observación | Acción o consideración |
+|---|---|---|
+| N22 | Se detectó que una entrada vacía era interpretada como la opción 0. | Se identificó la necesidad de modificar la validación para distinguir una entrada vacía de un número entero válido. La propuesta de corrección quedó pendiente de revisión por el equipo. |
+
+## 7. Conclusión
+
+Las pruebas funcionales y matemáticas realizadas permitieron comprobar el funcionamiento de las opciones principales y la coherencia de los resultados calculados por el simulador.
+
+Durante las pruebas de validación se identificó un comportamiento incorrecto ante entradas vacías.
